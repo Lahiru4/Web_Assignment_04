@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+
+        div > div:nth-child(3) {
+            width: 220px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: gray;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div > div:nth-child(3) > label {
+            width: 50px;
+            height: 10px;
+            position: absolute;
+            top: calc(50% - 5px);
+            left: calc(50% - 25px);
+            color: white;
+            font-weight: bold;
+        }
+
+        div > div:first-child {
+            width: 230px;
+            aspect-ratio: 1/1;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div > div:nth-child(2) {
+            width: 220px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            border-top-color: red;
+            border-bottom-color: white;
+            border-left-color: white;
+            border-right-color: white;
+            border-width: 10px;
+            border-style: solid;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        div > div:hover:nth-child(2) {
+            transform: rotate(360deg);
+            transition-duration: 2s;
+            animation-iteration-count: 200;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <div></div>
+    <div></div>
+    <div><label>RWAD</label></div>
+</div>
+</body>
+</html>

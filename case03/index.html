@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        root{
+            --box-with:150px;
+            --box-hight:50px;
+        }
+        display{
+            overflow: hidden;
+        }
+        div {
+            background-color: blue;
+            width: 150px;
+            height: 60px;
+            border-radius: 15px;
+            animation-name: my-animation;
+            animation-duration: 4s;
+            imation-iteration-count: 1;
+        }
+
+        @keyframes my-animation {
+            0% {
+                position: absolute;
+                margin-top: 0;
+                margin-left: 100vw;
+            }
+            25% {
+                position: absolute;
+                margin-top: 0px;
+                margin-left: 1700px;
+                background-color: yellow;
+            }
+            50% {
+                position: absolute;
+                margin-top: 1000px;
+                margin-right: 0px;
+                background-color: rgba(233, 18, 18, 0.61);
+
+            }
+            75% {
+                position: absolute;
+                margin-bottom: 0;
+                margin-left: 0px;
+                background-color: rgba(233, 18, 18, 0.61);
+            }
+            100% {
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>
